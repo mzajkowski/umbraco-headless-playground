@@ -11,7 +11,7 @@ A playground with some PoCs for working with Umbraco as a headless CMS (with Xam
 ## Roadmap:
 
 - REST based headless approach using [HeadRest](https://github.com/mzajkowski/umbraco-headrest) package
-- Umbraco Headless™ client demos
+- [Umbraco Headless™](https://umbraco.com/products/umbraco-headless/) client demos
 - Custom API with Azure CDN
 - Nice-to-have: GraphQL, protobuf-net & Swagger examples
 
