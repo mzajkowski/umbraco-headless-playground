@@ -8,6 +8,15 @@ A playground with some PoCs for working with Umbraco as a headless CMS (with Xam
 
 ---
 
+## Demo WebApp
+
+Backoffice credentials:
+
+- Username: admin@demo.com
+- Password: password123
+
+---
+
 ## Roadmap:
 
 - REST based headless approach using [HeadRest](https://github.com/mzajkowski/umbraco-headrest) package
