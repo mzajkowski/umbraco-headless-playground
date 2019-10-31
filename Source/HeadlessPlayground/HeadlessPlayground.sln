@@ -14,8 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Clients", "Demo Client
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.HeadRestDemo.Web", "HeadRest.Umbraco8.Web\Umbraco.HeadRestDemo.Web.csproj", "{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.HeadRestDemo", "Umbraco.HeadRestDemo\Umbraco.HeadRestDemo.csproj", "{CAA08FF3-CEF9-4F2A-9E5A-921E550A9836}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,17 +24,12 @@ Global
 		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CAA08FF3-CEF9-4F2A-9E5A-921E550A9836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CAA08FF3-CEF9-4F2A-9E5A-921E550A9836}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CAA08FF3-CEF9-4F2A-9E5A-921E550A9836}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CAA08FF3-CEF9-4F2A-9E5A-921E550A9836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
-		{CAA08FF3-CEF9-4F2A-9E5A-921E550A9836} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {309995A1-2F7C-45AE-A844-3E95E447749F}
