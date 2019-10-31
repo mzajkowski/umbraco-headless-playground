@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Readme", "_Readme", "{677FA7DB-476F-4FA2-B702-D30B5583F7C1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\README.md = ..\..\README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Headless WebApps", "Demo Headless WebApps", "{F71A30C1-9A86-4C6A-9200-78EB03850DE7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Clients", "Demo Clients", "{A8D328CD-7381-4CF7-8643-5B24E0285885}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.TestSite.Events.Web", "Umbraco.TestSite.Events.Web\Umbraco.TestSite.Events.Web.csproj", "{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.GraphQLDemo", "Umbraco.GraphQLDemo\Umbraco.GraphQLDemo.csproj", "{51B00ADF-9E39-43B5-B6E8-B858C89B9D23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.HeadRestDemo", "Umbraco.HeadRestDemo\Umbraco.HeadRestDemo.csproj", "{3A816D77-740F-4B81-BAFC-52BBB8FFB576}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GraphQL", "GraphQL", "{250D8351-EAF2-45B9-8E25-E2BD18CDF234}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HeadRest", "HeadRest", "{70F4082B-FDCC-4AC1-9239-747B9B8CAEB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.TestSite.Events.Models", "Umbraco.TestSite.Events.Models\Umbraco.TestSite.Events.Models.csproj", "{5C964C30-2443-489A-8FED-6252E00BA471}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotnetCore", "DotnetCore", "{D2117B0A-F6D1-4E22-9EA3-F3FAF9184F68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{23010105-50CC-462E-A3DC-3862A5A982E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B00ADF-9E39-43B5-B6E8-B858C89B9D23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B00ADF-9E39-43B5-B6E8-B858C89B9D23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B00ADF-9E39-43B5-B6E8-B858C89B9D23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B00ADF-9E39-43B5-B6E8-B858C89B9D23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A816D77-740F-4B81-BAFC-52BBB8FFB576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A816D77-740F-4B81-BAFC-52BBB8FFB576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A816D77-740F-4B81-BAFC-52BBB8FFB576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A816D77-740F-4B81-BAFC-52BBB8FFB576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C964C30-2443-489A-8FED-6252E00BA471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C964C30-2443-489A-8FED-6252E00BA471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C964C30-2443-489A-8FED-6252E00BA471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C964C30-2443-489A-8FED-6252E00BA471}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B96F81C-A708-425F-A2C8-C6ED9466FDD8} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
+		{51B00ADF-9E39-43B5-B6E8-B858C89B9D23} = {250D8351-EAF2-45B9-8E25-E2BD18CDF234}
+		{3A816D77-740F-4B81-BAFC-52BBB8FFB576} = {70F4082B-FDCC-4AC1-9239-747B9B8CAEB5}
+		{250D8351-EAF2-45B9-8E25-E2BD18CDF234} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
+		{70F4082B-FDCC-4AC1-9239-747B9B8CAEB5} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
+		{5C964C30-2443-489A-8FED-6252E00BA471} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
+		{D2117B0A-F6D1-4E22-9EA3-F3FAF9184F68} = {A8D328CD-7381-4CF7-8643-5B24E0285885}
+		{23010105-50CC-462E-A3DC-3862A5A982E4} = {A8D328CD-7381-4CF7-8643-5B24E0285885}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {309995A1-2F7C-45AE-A844-3E95E447749F}
+	EndGlobalSection
+EndGlobal
