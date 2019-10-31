@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotnetCore", "DotnetCore", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin", "Xamarin", "{23010105-50CC-462E-A3DC-3862A5A982E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCore.Events.Demo", "DotnetCore.Events.Demo\DotnetCore.Events.Demo.csproj", "{75074046-8F32-4C2F-B311-1517CCC9F998}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{5C964C30-2443-489A-8FED-6252E00BA471}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C964C30-2443-489A-8FED-6252E00BA471}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C964C30-2443-489A-8FED-6252E00BA471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75074046-8F32-4C2F-B311-1517CCC9F998}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75074046-8F32-4C2F-B311-1517CCC9F998}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75074046-8F32-4C2F-B311-1517CCC9F998}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75074046-8F32-4C2F-B311-1517CCC9F998}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{5C964C30-2443-489A-8FED-6252E00BA471} = {F71A30C1-9A86-4C6A-9200-78EB03850DE7}
 		{D2117B0A-F6D1-4E22-9EA3-F3FAF9184F68} = {A8D328CD-7381-4CF7-8643-5B24E0285885}
 		{23010105-50CC-462E-A3DC-3862A5A982E4} = {A8D328CD-7381-4CF7-8643-5B24E0285885}
+		{75074046-8F32-4C2F-B311-1517CCC9F998} = {D2117B0A-F6D1-4E22-9EA3-F3FAF9184F68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {309995A1-2F7C-45AE-A844-3E95E447749F}
