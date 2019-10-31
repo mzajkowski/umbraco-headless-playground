@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Headless WebApps", "De
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Clients", "Demo Clients", "{A8D328CD-7381-4CF7-8643-5B24E0285885}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.HeadRestDemo.Web", "HeadRest.Umbraco8.Web\Umbraco.HeadRestDemo.Web.csproj", "{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.HeadRestDemo.Web", "Umbraco.HeadRestDemo.Web\Umbraco.HeadRestDemo.Web.csproj", "{9B96F81C-A708-425F-A2C8-C6ED9466FDD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
