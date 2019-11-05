@@ -1,4 +1,4 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
@@ -35,6 +35,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Events.Demo.iOS", "Xamarin.Events.Demo\Xamarin.Events.Demo.iOS\Xamarin.Events.Demo.iOS.csproj", "{1881E84F-86BA-4566-ABBE-EBBCA60A8CEA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Events.Demo", "Xamarin.Events.Demo\Xamarin.Events.Demo\Xamarin.Events.Demo.csproj", "{8707DDE6-4F16-45E6-B994-DFDF7EF057DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{6096F1FB-D939-4A59-ACF3-CB610CD745DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.UmbracoHeadless.Demo", "Console.UmbracoHeadless.Demo\Console.UmbracoHeadless.Demo.csproj", "{F55CD357-D159-493F-BB24-4754D8E57A4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
