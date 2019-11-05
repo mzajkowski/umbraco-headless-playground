@@ -382,17 +382,6 @@
     <Compile Include="Mappings\Maps\EventsViewModelMapper.cs" />
     <Compile Include="Mappings\Maps\EventViewModelMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\BaseViewModel.cs" />
-    <Compile Include="ViewModels\EventsViewModel.cs" />
-    <Compile Include="ViewModels\EventTypesViewModel.cs" />
-    <Compile Include="ViewModels\EventTypeViewModel.cs" />
-    <Compile Include="ViewModels\EventViewModel.cs" />
-    <Compile Include="ViewModels\OrganisersViewModel.cs" />
-    <Compile Include="ViewModels\OrganiserViewModel.cs" />
-    <Compile Include="ViewModels\SpeakersViewModel.cs" />
-    <Compile Include="ViewModels\SpeakerViewModel.cs" />
-    <Compile Include="ViewModels\VenuesViewModel.cs" />
-    <Compile Include="ViewModels\VenueViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -403,6 +392,10 @@
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.2.6.1\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Umbraco.HeadRestDemo.Models\Umbraco.HeadRestDemo.Models.csproj">
+      <Project>{810f019c-2a18-42f0-9eee-d9d0efccae5c}</Project>
+      <Name>Umbraco.HeadRestDemo.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Umbraco.TestSite.Events.Models\Umbraco.TestSite.Events.Models.csproj">
       <Project>{5c964c30-2443-489a-8fed-6252e00ba471}</Project>
       <Name>Umbraco.TestSite.Events.Models</Name>
