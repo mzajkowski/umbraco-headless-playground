@@ -1,6 +1,5 @@
 ﻿using Refit;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Umbraco.HeadRestDemo.ViewModels;
@@ -10,7 +9,11 @@ namespace Events.Demo.Client
     public interface IHeadRestApi
     {
         [Get("/")]
-        Task<EventsViewModel> GetEvents();
+        Task<EventsViewModel> GetEventsFromRoot();
+
+
+        [Get("/{uri}")]
+        Task<EventViewModel> GetEventByUri(Uri uri);
     }
 
     public class EventsHeadRestClient : IHeadRestApi
@@ -24,9 +27,14 @@ namespace Events.Demo.Client
             _headRestApi = RestService.For<IHeadRestApi>(_httpClient);
         }
 
-        public async Task<EventsViewModel> GetEvents()
+        public async Task<EventsViewModel> GetEventsFromRoot()
         {
-            return await _headRestApi.GetEvents().ConfigureAwait(false);
+            return await _headRestApi.GetEventsFromRoot().ConfigureAwait(false);
+        }
+
+        public async Task<EventViewModel> GetEventByUri(Uri uri)
+        {
+            return await _headRestApi.GetEventByUri(uri).ConfigureAwait(false);
         }
     }
 }

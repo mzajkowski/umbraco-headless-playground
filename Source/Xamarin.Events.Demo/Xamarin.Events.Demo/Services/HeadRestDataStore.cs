@@ -12,25 +12,28 @@ namespace Xamarin.Events.Demo.Services
     {
         EventsHeadRestClient client;
         IEnumerable<Item> items;
+        bool IsConnected => Connectivity.NetworkAccess == NetworkAccess.Internet;
 
         public HeadRestDataStore()
         {
             client = new EventsHeadRestClient(new Uri(App.HeadRestBackendUrl));
-
             items = new List<Item>();
         }
 
-        bool IsConnected => Connectivity.NetworkAccess == NetworkAccess.Internet;
         public async Task<IEnumerable<Item>> GetItemsAsync(bool forceRefresh = false)
         {
             if (forceRefresh && IsConnected)
             {
-                var events = await client.GetEvents();
+                var events = await client.GetEventsFromRoot();
 
-                items = await Task.Run(() => events.Events.Select(x => new Item { 
-                    Id = x.Id.ToString(), 
-                    Text = x.Name, 
-                    Description = x.Url }));
+                // Mapper?
+                items = await Task.Run(() => events.Events.Select(x =>
+                    new Item
+                    {
+                        Id = x.Url,
+                        Text = x.Name,
+                        Description = x.Id.ToString()
+                    }));
             }
 
             return items;
@@ -38,11 +41,18 @@ namespace Xamarin.Events.Demo.Services
 
         public async Task<Item> GetItemAsync(string id)
         {
-            //if (id != null && IsConnected)
-            //{
-            //    var json = await client.GetStringAsync($"api/item/{id}");
-            //    return await Task.Run(() => JsonConvert.DeserializeObject<Item>(json));
-            //}
+            if (id != null && IsConnected)
+            {
+                var eventObject = await client.GetEventByUri(new Uri(id));
+
+                // Mapper?
+                return new Item
+                {
+                    Id = eventObject.Url,
+                    Text = eventObject.Name,
+                    Description = eventObject.Id.ToString()
+                };
+            }
 
             return null;
         }
@@ -53,10 +63,9 @@ namespace Xamarin.Events.Demo.Services
                 return false;
 
             //var serializedItem = JsonConvert.SerializeObject(item);
-
             //var response = await client.PostAsync($"api/item", new StringContent(serializedItem, Encoding.UTF8, "application/json"));
-
             //return response.IsSuccessStatusCode;
+
             return true;
         }
 
@@ -68,10 +77,9 @@ namespace Xamarin.Events.Demo.Services
             //var serializedItem = JsonConvert.SerializeObject(item);
             //var buffer = Encoding.UTF8.GetBytes(serializedItem);
             //var byteContent = new ByteArrayContent(buffer);
-
             //var response = await client.PutAsync(new Uri($"api/item/{item.Id}"), byteContent);
-
             //return response.IsSuccessStatusCode;
+
             return true;
         }
 
@@ -81,8 +89,8 @@ namespace Xamarin.Events.Demo.Services
                 return false;
 
             //var response = await client.DeleteAsync($"api/item/{id}");
-
             //return response.IsSuccessStatusCode;
+
             return true;
         }
     }

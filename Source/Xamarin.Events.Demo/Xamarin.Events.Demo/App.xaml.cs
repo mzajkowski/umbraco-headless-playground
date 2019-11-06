@@ -1,5 +1,4 @@
-﻿using Xamarin.Essentials;
-using Xamarin.Events.Demo.Services;
+﻿using Xamarin.Events.Demo.Services;
 using Xamarin.Events.Demo.Views;
 using Xamarin.Forms;
 
