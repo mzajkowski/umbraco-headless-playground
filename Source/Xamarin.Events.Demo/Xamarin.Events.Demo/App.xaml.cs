@@ -14,11 +14,12 @@ namespace Xamarin.Events.Demo
     public partial class App : Application
     {
         public static string HeadRestBackendUrl = "https://azapp-headlesstestsite-dev.azurewebsites.net/";
+        public static string HeadlessProjectAlias = "marcin-headless-uk-fest";
 
         internal DataSource CurrentDataSource =
-            DataSource.HeadRest;
-        //DataSource.GraphQL;
-        //DataSource.Headless;
+            //DataSource.HeadRest;
+            //DataSource.GraphQL;
+            DataSource.Headless;
 
         public App()
         {
@@ -28,8 +29,11 @@ namespace Xamarin.Events.Demo
             {
                 DependencyService.Register<HeadRestDataStore>();
             }
-            else if(CurrentDataSource == DataSource.GraphQL) { }
-            else if(CurrentDataSource == DataSource.Headless) { }
+            else if (CurrentDataSource == DataSource.GraphQL) { }
+            else if (CurrentDataSource == DataSource.Headless)
+            {
+                DependencyService.Register<HeadlessDataStore>();
+            }
             else
             {
                 DependencyService.Register<MockDataStore>();

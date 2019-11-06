@@ -1,20 +1,29 @@
-﻿namespace Events.Demo.Client
-{
-    public interface IEventsHeadlessClient {
-        object GetAllEvents();
-        object GetEvent(string id);
-    }
+﻿using Events.Demo.Client.Configuration;
+using System;
+using System.Threading.Tasks;
+using Umbraco.Headless.Client.Net.Delivery;
+using Umbraco.Headless.Client.Net.Delivery.Models;
 
-    public class EventsHeadlessClient : IEventsHeadlessClient
+namespace Events.Demo.Client
+{
+    public class EventsHeadlessClient
     {
-        public object GetAllEvents()
+        private ContentDeliveryService _headlessClient;
+
+        public EventsHeadlessClient(string projectAlias)
         {
-            throw new System.NotImplementedException();
+            _headlessClient = new ContentDeliveryService(new ContentDeliveryConfiguration(projectAlias));
+        }
+        public async Task<PagedContent> GetAllEvents()
+        {
+            var allEvents = await _headlessClient.Content.GetByType("event").ConfigureAwait(false);
+            return allEvents;
         }
 
-        public object GetEvent(string id)
+        public async Task<Content> GetEvent(Guid id)
         {
-            throw new System.NotImplementedException();
+            var eventObject = await _headlessClient.Content.GetById(id).ConfigureAwait(false);
+            return eventObject;
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Refit;
+﻿using Events.Demo.Client.Interfaces;
+using Refit;
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -6,16 +7,6 @@ using Umbraco.HeadRestDemo.ViewModels;
 
 namespace Events.Demo.Client
 {
-    public interface IHeadRestApi
-    {
-        [Get("/")]
-        Task<EventsViewModel> GetEventsFromRoot();
-
-
-        [Get("/{uri}")]
-        Task<EventViewModel> GetEventByUri(Uri uri);
-    }
-
     public class EventsHeadRestClient : IHeadRestApi
     {
         private readonly HttpClient _httpClient;

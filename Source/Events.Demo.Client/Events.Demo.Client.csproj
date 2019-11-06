@@ -10,10 +10,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Refit" Version="4.8.14" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Models\" />
+    <PackageReference Include="Umbraco.Headless.Client.Net" Version="0.9.0.28874-RC" />
   </ItemGroup>
 
   <ItemGroup>
