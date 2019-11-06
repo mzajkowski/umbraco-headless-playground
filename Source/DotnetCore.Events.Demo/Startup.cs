@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
+using Umbraco.Headless.Client.Net.Configuration;
+using Umbraco.Headless.Client.Net.Delivery;
 
 namespace DotnetCore.Events.Demo
 {
@@ -19,6 +22,15 @@ namespace DotnetCore.Events.Demo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddHttpClient("headless", c =>
+            {
+                c.BaseAddress = new Uri("https://cdn.umbraco.io/content");
+                c.DefaultRequestHeaders.Add("Umb-Project-Alias", "marcin-headless-uk-fest");
+            });
+
+            // Issues... DI?! https://github.com/aspnet/Extensions/issues/1345
+            //services.AddHttpClient<ContentDeliveryService>(client => new ContentDeliveryService("marcin-headless-uk-fest"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

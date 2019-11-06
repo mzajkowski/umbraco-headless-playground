@@ -42,7 +42,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console.UmbracoHeadless.Dem
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events.Demo.Client", "Events.Demo.Client\Events.Demo.Client.csproj", "{E63013EE-A40F-417D-B94C-6FB8B0D369DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.HeadRestDemo.Models", "Umbraco.HeadRestDemo.Models\Umbraco.HeadRestDemo.Models.csproj", "{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.HeadRestDemo.Models", "Umbraco.HeadRestDemo.Models\Umbraco.HeadRestDemo.Models.csproj", "{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
