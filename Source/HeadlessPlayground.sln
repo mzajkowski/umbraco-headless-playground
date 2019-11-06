@@ -38,7 +38,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Xamarin.Events.Demo", "Xama
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{6096F1FB-D939-4A59-ACF3-CB610CD745DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.UmbracoHeadless.Demo", "Console.UmbracoHeadless.Demo\Console.UmbracoHeadless.Demo.csproj", "{F55CD357-D159-493F-BB24-4754D8E57A4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console.UmbracoHeadless.Demo", "Console.UmbracoHeadless.Demo\Console.UmbracoHeadless.Demo.csproj", "{F55CD357-D159-493F-BB24-4754D8E57A4A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Events.Demo.Client", "Events.Demo.Client\Events.Demo.Client.csproj", "{E63013EE-A40F-417D-B94C-6FB8B0D369DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.HeadRestDemo.Models", "Umbraco.HeadRestDemo.Models\Umbraco.HeadRestDemo.Models.csproj", "{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -162,6 +166,30 @@ Global
 		{F55CD357-D159-493F-BB24-4754D8E57A4A}.Release|iPhone.Build.0 = Release|Any CPU
 		{F55CD357-D159-493F-BB24-4754D8E57A4A}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F55CD357-D159-493F-BB24-4754D8E57A4A}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Release|iPhone.Build.0 = Release|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Release|iPhone.Build.0 = Release|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -181,6 +209,8 @@ Global
 		{8707DDE6-4F16-45E6-B994-DFDF7EF057DD} = {23010105-50CC-462E-A3DC-3862A5A982E4}
 		{6096F1FB-D939-4A59-ACF3-CB610CD745DB} = {A8D328CD-7381-4CF7-8643-5B24E0285885}
 		{F55CD357-D159-493F-BB24-4754D8E57A4A} = {6096F1FB-D939-4A59-ACF3-CB610CD745DB}
+		{E63013EE-A40F-417D-B94C-6FB8B0D369DC} = {A8D328CD-7381-4CF7-8643-5B24E0285885}
+		{810F019C-2A18-42F0-9EEE-D9D0EFCCAE5C} = {70F4082B-FDCC-4AC1-9239-747B9B8CAEB5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {309995A1-2F7C-45AE-A844-3E95E447749F}
