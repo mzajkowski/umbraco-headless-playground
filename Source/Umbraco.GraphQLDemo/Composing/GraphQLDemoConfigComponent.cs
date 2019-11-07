@@ -1,4 +1,6 @@
 ﻿using Our.Umbraco.GraphQL.Web;
+using Owin;
+using System.Web.Hosting;
 using Umbraco.Core.Composing;
 using Umbraco.Core.Configuration;
 using Umbraco.Web;
@@ -18,18 +20,28 @@ namespace Umbraco.GraphQLDemo.Composing
 
         public void Initialize()
         {
-            UmbracoDefaultOwinStartup.MiddlewareConfigured += (s, e) =>
+            UmbracoDefaultOwinStartup.MiddlewareConfigured += UmbracoDefaultOwinStartup_MiddlewareConfigured;
+        }
+
+        private void UmbracoDefaultOwinStartup_MiddlewareConfigured(object sender, OwinMiddlewareConfiguredEventArgs e) =>
+            Configure(e.AppBuilder);
+
+        private void Configure(IAppBuilder app)
+        {
+            var path = $"/{_globalSettings.GetUmbracoMvcArea()}/graphql";
+
+            app.UseUmbracoGraphQL(path, _factory, opts =>
             {
-                e.AppBuilder.UseUmbracoGraphQL(_globalSettings.GetUmbracoMvcArea(), _factory, new GraphQLServerOptions
-                {
-                    EnableMetrics = true,
-                    Debug = true,
-                });
-            };
+                opts.Debug = HostingEnvironment.IsDevelopmentEnvironment;
+                opts.EnableMetrics = true;
+                opts.EnableMiniProfiler = false;
+                opts.EnablePlayground = true;
+            });
         }
 
         public void Terminate()
         {
+            UmbracoDefaultOwinStartup.MiddlewareConfigured -= UmbracoDefaultOwinStartup_MiddlewareConfigured;
         }
     }
 }
