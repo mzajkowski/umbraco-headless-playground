@@ -202,6 +202,7 @@ Build/Output/
 
 # Umbraco
 Source/**/App_Data/
+!Source/**/App_Data/Umbraco.mdf
 Source/**/Media/
 !Source/**/Media/Web.config
 Source/**/Umbraco
