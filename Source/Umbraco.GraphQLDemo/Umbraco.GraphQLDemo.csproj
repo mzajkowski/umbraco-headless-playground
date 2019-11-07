@@ -242,6 +242,18 @@
     <Compile Include="Composing\GraphQLDemoComposer.cs" />
     <Compile Include="Composing\GraphQLDemoConfigComponent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Starwars\Data\CharacterDto.cs" />
+    <Compile Include="Starwars\Data\DroidDto.cs" />
+    <Compile Include="Starwars\Data\HumanDto.cs" />
+    <Compile Include="Starwars\Data\StarWarsData.cs" />
+    <Compile Include="Starwars\Schema\CharacterDtoExtensions.cs" />
+    <Compile Include="Starwars\Schema\StarWarsQuery.cs" />
+    <Compile Include="Starwars\Schema\StarWarsRootQuery.cs" />
+    <Compile Include="Starwars\Schema\Types\Droid.cs" />
+    <Compile Include="Starwars\Schema\Types\Episode.cs" />
+    <Compile Include="Starwars\Schema\Types\Human.cs" />
+    <Compile Include="Starwars\Schema\Types\ICharacter.cs" />
+    <Compile Include="Starwars\StarwarsComponent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

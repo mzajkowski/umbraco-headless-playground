@@ -1,15 +1,10 @@
-﻿using Our.Umbraco.GraphQL;
+﻿using Umbraco.Core;
 using Umbraco.Core.Composing;
 
 namespace Umbraco.GraphQLDemo.Composing
 {
+    [RuntimeLevel(MinLevel = RuntimeLevel.Run)]
     class GraphQLDemoComposer : ComponentComposer<GraphQLDemoConfigComponent>, IUserComposer
     {
-        public override void Compose(Composition composition)
-        {
-            base.Compose(composition);
-
-            composition.RegisterGraphQLServices();
-        }
     }
 }
