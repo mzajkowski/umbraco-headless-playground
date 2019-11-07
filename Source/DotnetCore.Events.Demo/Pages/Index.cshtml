@@ -5,6 +5,21 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome - See our Events!</h1>
+
+    <div class="card-group">
+        @foreach (var ev in Model.Events.Content.Items)
+        {
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="//lorempixel.com/g/600/300/business" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@ev.Name</h5>
+                    <p class="card-text">UpdateDate: @ev.UpdateDate</p>
+                    <a href="@ev.Url" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        }
+    </div>
+
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

@@ -4,11 +4,14 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Umbraco.Headless.Client.Net.Delivery;
+using Umbraco.Headless.Client.Net.Delivery.Models;
 
 namespace DotnetCore.Events.Demo.Pages
 {
     public class IndexModel : PageModel
     {
+        public PagedContent Events;
+
         private readonly ILogger<IndexModel> _logger;
         private readonly IHttpClientFactory _clientFactory;
 
@@ -33,6 +36,8 @@ namespace DotnetCore.Events.Demo.Pages
 
                 // Not yet possible...?
                 //var test3 = await _contentDeliveryClient.Content.GetRoot();
+
+                Events = await headlessClient.Content.GetByType("event");
             }
             catch (Exception _)
             {
