@@ -8,25 +8,30 @@ A playground with some PoCs for working with Umbraco as a headless CMS (with Xam
 
 ---
 
-## Demo WebApp
+## General Contents:
 
-Backoffice credentials:
-
-- Username: admin@demo.com
-- Password: password123
+- [Umbraco Headless™](https://umbraco.com/products/umbraco-headless/) client demos
+  - Console app
+  - Xamarin Forms
+  - .NET Core Web App
+- REST based headless approach using [HeadRest](https://github.com/mzajkowski/umbraco-headrest) package
+- GraphQL Playground and sample queries for Umbraco content data
+- Demo Umbraco Web App - backoffice credentials:
+  - Username: admin@demo.com
+  - Password: password123
 
 ---
 
-## Roadmap:
+## Roadmap (ideas for extensions):
 
-- REST based headless approach using [HeadRest](https://github.com/mzajkowski/umbraco-headrest) package
-- [Umbraco Headless™](https://umbraco.com/products/umbraco-headless/) client demos
-- Custom API with Azure CDN
-- Nice-to-have: GraphQL, protobuf-net & Swagger examples
+- Custom Managed API with Azure CDN / Frontdoor implementation
+- Nice-to-have: protobuf-net & Swagger examples
 
 ---
 
 ## Resources:
+
+[Presentation Slides used during Workshops](https://slides.com/zajkowskimarcin/umbraco-as-a-headless-cms)
 
 [Official Umbraco Headless documentation](https://github.com/umbraco/UmbracoDocs/blob/headless-8-wip/Umbraco-Headless/API-Documentation/index.md)
 
